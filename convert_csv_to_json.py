@@ -31,7 +31,7 @@ def csv_to_json_with_zero_based_choices(csv_file, json_file):
             for j, (lu_def, frame_name, frame_def) in enumerate(zip(lu_defs, frame_names, frame_defs)):
                 lu_definition = lu_def.strip()
                 frame_definition = frame_def.strip()
-                option = f"Frame Name: {frame_definition.replace(':', ' - Frame Definition :')} ; Lexical Unit definition: {lu_definition.replace(':', ' -')}"
+                option = f"Frame: {frame_definition.replace(':', ' -')} ; Lexical Unit definition: {lu_definition.replace(':', ' -')}"
                 options.append(option)
                 lu_definitions.append(lu_definition)
                 frames.append(frame_name)
