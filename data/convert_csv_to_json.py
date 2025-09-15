@@ -85,3 +85,4 @@ if __name__ == "__main__":
     convert_folder(args.folder)
 
 # Usage : python data_formatter_to_json.py --folder fn1.5/data-csv
+
