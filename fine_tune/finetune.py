@@ -113,7 +113,7 @@ class LlamaFrameChoiceModel(nn.Module):
         return (loss,out) if loss is not None else out
     
 
-def set_seed(seed: int = 42):
+def set_seed(seed: int = 130):
     """
     Set random seeds for reproducibility across Python, NumPy, and PyTorch (single GPU).
     Note: with fp16 training, results are reproducible in practice but not bit-exact.
@@ -149,7 +149,7 @@ def main():
     parser = argparse.ArgumentParser(description="Fine-tune llama for Frame Identification")
     parser.add_argument("--data-dir", type=str, required=True, help="Directory containing train.jsonl, val.jsonl, and test.jsonl")
     parser.add_argument("--output-dir", type=str, required=True, help="Output Directory to store the trained model.")
-    parser.add_argument("--seed", type=int, default=42, help="Random seed for reproducibility")
+    parser.add_argument("--seed", type=int, default=130, help="Random seed for reproducibility")
 
     args = parser.parse_args()
     set_seed(args.seed)
