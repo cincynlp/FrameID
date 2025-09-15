@@ -52,7 +52,6 @@ class LlamaFrameChoiceModel(nn.Module):
     def __init__(self, model_name, tokenizer):
         super().__init__()
         base_model = AutoModelForCausalLM.from_pretrained(model_name)
-        # base_model.gradient_checkpointing_enable()
 
         for param in base_model.parameters():
             param.requires_grad = False
