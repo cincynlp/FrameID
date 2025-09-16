@@ -148,7 +148,7 @@ def main():
     parser = argparse.ArgumentParser(description="Fine-tune llama for Frame Identification")
     parser.add_argument("--data-dir", type=str, required=True, help="Directory containing train.jsonl, val.jsonl, and test.jsonl")
     parser.add_argument("--output-dir", type=str, required=True, help="Output Directory to store the trained model.")
-    parser.add_argument("--seed", type=int, default=130, help="Random seed for reproducibility")
+    parser.add_argument("--seed", type=int, default=330, help="Random seed for reproducibility")
 
     args = parser.parse_args()
     set_seed(args.seed)
