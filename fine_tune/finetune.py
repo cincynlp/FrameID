@@ -112,7 +112,7 @@ class LlamaFrameChoiceModel(nn.Module):
         return (loss,out) if loss is not None else out
     
 
-def set_seed(seed: int = 130):
+def set_seed(seed: int = 330):
     """
     Set random seeds for reproducibility across Python, NumPy, and PyTorch (single GPU).
     Note: with fp16 training, results are reproducible in practice but not bit-exact.
