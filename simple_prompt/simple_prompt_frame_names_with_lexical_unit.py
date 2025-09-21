@@ -3,8 +3,6 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import json
 import re
-
-import re
 import random
 import numpy as np
 
