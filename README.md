@@ -76,7 +76,7 @@ To Evaluate on Downstream tasks
   
   ```bash
   cd evaluate
-  python evaluate.py --dataset artifacts_data/artifacts.jsonl --adapter lora_model_1_7
+  python artifacts_evaluate.py --dataset artifacts_data/artifacts.jsonl --adapter lora_model_1_7
   ```
   
 This will output evaluation results.
