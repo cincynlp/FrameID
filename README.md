@@ -55,11 +55,30 @@ cp ../fine_tune/model_1_7/adapter_config.json lora_model_1_7/
 cp ../fine_tune/model_1_7/adapter_model.safetensors lora_model_1_7/
 ```
 
-2. Run evaluation:
+2. Run evaluation :
 
 ```bash
+cd evaluate
 python evaluate.py --dataset ../fine_tune/finetune_data_1_7/test.jsonl --adapter lora_model_1_7
 ```
+
+To Evaluate on Downstream tasks 
+  
+  i. YAGS 
+  
+  Follow the same steps as Data Preparation steps followed for Fine-tuning and create a dataset folder yags_data,
+  
+  ```bash
+  cd evaluate
+  python evaluate.py --dataset yags_data/test.jsonl --adapter lora_model_1_7
+  ```
+  ii. Artifacts
+  
+  ```bash
+  cd evaluate
+  python evaluate.py --dataset artifacts_data/artifacts.jsonl --adapter lora_model_1_7
+  ```
+  
 This will output evaluation results.
 
 ## Contact
